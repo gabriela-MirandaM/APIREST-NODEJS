@@ -1,17 +1,17 @@
 import {
-    Entity,
-    PrimaryGeneratedColumn,
-    Column,
-    CreateDateColumn,
-    UpdateDateColumn,
-    DeleteDateColumn,
-    OneToMany
-  } from "typeorm";
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+  DeleteDateColumn,
+  OneToMany
+} from "typeorm";
 import { Permission } from "./Permission";
 
 @Entity("groups")
 export class Group {
-    @PrimaryGeneratedColumn("increment", { type: "bigint" })
+  @PrimaryGeneratedColumn("increment", { type: "bigint" })
   id: number | undefined;
 
   @Column({ type: "text", nullable: false })

@@ -1,16 +1,17 @@
-import {   
-    Column,
-    CreateDateColumn,
-    DeleteDateColumn,
-    Entity,
-    OneToMany,
-    PrimaryGeneratedColumn,
-    UpdateDateColumn} from "typeorm";
-    import { Product } from "./Product";
+import {
+  Column,
+  CreateDateColumn,
+  DeleteDateColumn,
+  Entity,
+  OneToMany,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn
+} from "typeorm";
+import { Product } from "./Product";
 
 @Entity("categories")
 export class Category {
-    @PrimaryGeneratedColumn("increment", { type: "bigint" })
+  @PrimaryGeneratedColumn("increment", { type: "bigint" })
   id: number | undefined;
 
   @Column({ type: "text", nullable: false })

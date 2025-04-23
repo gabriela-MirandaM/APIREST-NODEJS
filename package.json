@@ -18,18 +18,20 @@
     "migration:run": "npm run typeorm -- -d src/app-data-source.ts migration:run",
     "migration:revert": "npm run typeorm -- -d src/app-data-source.ts migration:revert",
     "schema:sync": "npm run typeorm -- -d src/app-data-source.ts schema:sync",
-    "schema:drop": "npm run typeorm -- -d src/app-data.source.ts schema:drop"
+    "schema:drop": "npm run typeorm -- -d src/app-data-source.ts schema:drop"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "express-winston": "^4.2.0",
     "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.2.2",
@@ -37,10 +39,12 @@
     "winston": "^3.17.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/express-winston": "^3.0.4",
     "@types/http-status-codes": "^1.2.0",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.13.14",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
